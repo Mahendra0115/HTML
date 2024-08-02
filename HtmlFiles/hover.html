@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(82, 76, 76);
+        height: 200px;
+        width: 100%;
+        padding: 20px;
+        border: 2px solid black;
+        color: white;
+        display:flex;
+        align-items: center;
+        /* justify-content: center; */
+        /* flex-direction: row-reverse; */
+        
+        
+    }
+    .box{
+       border: 2px solid white;
+       height: 130px;
+       width: 130px;
+       margin: 0px 10px 0px 0px;
+       border-end-end-radius:10px;
+       transition:1.5s;
+    }
+    .box:hover{
+        transform: scale(1.5);
+       
+        /* z-index:10; */
+    }
+
+    @media (max-width:600px) {
+        .container{
+            flex-direction: column;
+            background-color: rgb(61, 39, 39);
+            /* height: auto; */
+          
+        }
+        .box{
+            margin-bottom: 20px;
+        }
+    }
+    @media (min-width:700px) {
+         .container{
+            justify-content: center;
+         }
+         /* .box:hover{
+            transform: scale(1.3);
+         } */
+    }
+    
+   
+</style>
+<body>
+    <div class="container">
+
+       
+            <div class="box" id="b-1">
+                 <img src="img/download.webp" height="130px"width="130px">
+                 
+            </div>
+
+            <div class="box" b-2>
+                <img src="img/download.webp" height="130px"width="130px">            </div>
+    
+            <div class="box" b-3>
+                <img src="img/download.webp" height="130px"width="130px">            </div>
+    
+            <div class="box" b-4>
+                <img src="img/download.webp" height="130px"width="130px">            </div>
+
+       
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Form Data</title>
+</head>
+<body>
+    <h2>Submitted Form Data:</h2>
+    <!-- Display the submitted form data -->
+    <p><strong>Name:</strong> <span id="nameDisplay"></span></p>
+    <p><strong>Room No:</strong> <span id="roomDisplay"></span></p>
+    <p><strong>Course:</strong> <span id="courseDisplay"></span></p>
+    
+    <script>
+        // // Extract URL parameters
+        // const params = new URLSearchParams(window.location.search);
+        
+        // // Get form data from URL parameters
+        // const name = params.get('name');
+        // const room = params.get('room');
+        // const course = params.get('course');
+        
+        // // Display form data on the page
+        // document.getElementById('nameDisplay').textContent = name;
+        // document.getElementById('roomDisplay').textContent = room;
+        // document.getElementById('courseDisplay').textContent = course;
+
+
+        // const params = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(window.location.search);
+
+        const name = params.get('name');
+        const room = params.get('room');
+        const course = params.get('course');
+
+        document.getElementById('nameDisplay').textContent = name;
+        document.getElementById('roomDisplay').testContent = room;
+        document.getElementById('courseDisplay').textContent = course;
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 20px 20px ;
+        border: 2px solid black ;
+        height: 500px ;
+        width: 500px;
+        display: flex;
+        /* flex-direction: row; */
+    }
+    .class1{
+       height: 200px ;
+       width: 200px ;
+       border:2px dotted red;
+       padding:10px ;
+       margin: 10px;
+       display: flex;
+       flex-direction: row;
+    }
+    .class2{
+       height: 200px ;
+       width: 200px ;
+       border:2px dotted red;
+       padding:10px ;
+       margin: 10px;
+    }
+    #btn1{
+        /* padding: 5px; */
+        margin-right: 10px;
+        background: #000;
+        color: white;
+    }
+  @media (min-width:600px) {
+    .container{
+        flex-direction:row;
+        height: 150px;
+        width: 150px;
+    }
+
+    /* @media (max-width:600px) {
+        .class1{
+        
+    } */
+}
+    
+    
+  
+  @media (max-width:600px) {
+    .container{
+        flex-direction:column;
+    }
+    
+    .class2{
+        height: 150px;
+        width: 150px;
+    }
+    
+    /* #img{
+        height: 100px;
+        width: 100px;
+    } */
+    
+    @media (max-width:600px) {
+        
+        #btn1{
+            margin-bottom:20px ;
+        }
+        
+    }
+
+}
+</style>
+<body>
+    <div class="container">
+
+        <div class="class1">
+            <div class="button1">
+                <button type="btn1" id="btn1">click me </button>
+            </div>
+
+            <div class="button2">
+                <button type="btn1" id="btn2"> show me </button>
+            </div>
+             
+        </div>
+
+        <div class="class2">
+            <div class="images" id="img">
+              <img src="img/download.webp" height="200px" width="200px" alt="Modi ji ">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
