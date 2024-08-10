@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+    div{
+       
+        height:500px;
+        width:800px;
+        border: 2px solid black;
+        background-color: antiquewhite;
+        display:inline-block;
+        align-items:center;
+        padding-left:10%;
+        /* padding: 15px 15px; */
+    }
+
+    /* // Animation */
+    @keyframes example1{
+        to{background-color:blue;}
+        from{background-color:black;}
+    }
+
+    @keyframes pera{
+        0% {right:0px; top:0px; }
+        25% {right:75px; top:0px; background-color: red;}
+        50% {right:75px; top:100px;background-color: black;}
+        75% {right:0px; top:100px;background-color: yellow}
+        100% {right:0px; top:0px;background-color:rgb(111, 84, 89)}
+    }
+    
+    .box1{
+        position:relative;
+        /* animation-name:example1; */
+        animation-duration:alternate;
+         animation-direction: alternate;
+    }
+    .box1 p{
+        display: inline-block;
+        background-color: white;
+        font-size:20px;
+       
+        text-shadow: 2px 2px 1px blue;
+        
+       position: relative;
+        animation-name:pera;
+        animation-duration: 4s;
+         animation-direction: reverse;
+    }
+    .box1{
+        height:200px;
+        width:50px;
+        border: 1px solid red;
+        background-color: green;
+        position:relative;
+        top: 55px;
+        left:50px;
+        /* z-index: ; */
+        
+    }
+    .box2{
+        height:200px;
+        width:50px;
+        border: 1px solid black;
+        background-color: red;
+        position:none;
+        z-index: 1;
+     
+     
+    }
+  .box3{ 
+        height:200px;
+        width:50px;
+        border: 1px solid green;
+        background-color: rgb(212, 212, 56);
+        /* position: fixed; */
+    }
+
+    .box4{ 
+        height:200px;
+        width:50px;
+        border: 1px solid green;
+        background-color: pink;
+        /* position: fixed; */
+    }
+   
+</style>
+<body>
+    <div class="div1">
+      <div class="box1">
+       <p>box1</p>
+      </div>
+
+      <div class="box2">
+        box2
+      </div>
+
+      <div class="box3">
+           box3
+      </div>    
+
+      <div class="box4">
+        box4
+   </div> 
+
+    </div>
+</body>
+</html>
